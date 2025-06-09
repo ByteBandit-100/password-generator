@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Password Generator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="main">
+        <div class="psd-workspace">
+            <div id="gen-password">
+                <div id="align-gen-psd">
+                    <input type="text" placeholder="Generated password" readonly id="generated-password">
+                    <button id="copy">copy</button>
+                </div>
+                <div class="align-gen-psd">
+                    <input type="number" name="password-length"  placeholder="Password Length" id="char-length">
+                </div>
+                <div class="include-checkbox">
+                    <label for="upper-case">UpperCase Include </label>
+                    <input type="checkbox" checked name="upper-case" id="upper-case" class="checkBoxes">
+                </div>
+                <div class="include-checkbox">
+                    <label for="lower-case">LowerCase Include </label>
+                    <input type="checkbox" checked name="lower-case" id="lower-case" class="checkBoxes">
+                </div>
+                <div class="include-checkbox">
+                    <label for="number">Numbers Include </label>
+                    <input type="checkbox" checked name="numbers" id="numbers" class="checkBoxes">
+                </div>
+                <div class="include-checkbox">
+                    <label for="symbols">Symbols Include </label>
+                    <input type="checkbox" checked name="upper-case" id="symbols" class="checkBoxes">
+                </div>
+                <div id="align-gen-btn">
+                     <button id="generate-btn">Genrate Password</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
